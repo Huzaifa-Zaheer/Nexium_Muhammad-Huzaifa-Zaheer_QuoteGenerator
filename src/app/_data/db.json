@@ -1,0 +1,48 @@
+{
+  "quotes": [
+    {
+      "topic": "motivation",
+      "quotes": [
+        "The only way to do great work is to love what you do.",
+        "Success is not the key to happiness. Happiness is the key to success.",
+        "Don’t watch the clock; do what it does. Keep going."
+      ]
+    },
+    {
+      "topic": "life",
+      "quotes": [
+        "Life is what happens when you’re busy making other plans.",
+        "To live is the rarest thing in the world. Most people exist, that is all.",
+        "In the end, we only regret the chances we didn’t take."
+      ]
+    },
+    {
+      "topic": "success",
+      "quotes": [
+        "Success is not in what you have, but who you are.",
+        "The road to success and the road to failure are almost exactly the same.",
+        "Opportunities don't happen. You create them."
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "email": "bob@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "password": "123456"
+    }
+  ]
+}
