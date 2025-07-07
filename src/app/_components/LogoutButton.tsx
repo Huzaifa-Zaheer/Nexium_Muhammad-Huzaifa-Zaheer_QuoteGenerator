@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
 import { useRouter } from "next/navigation";
 
-function LogoutButton() {
+const LogoutButton = () => {
   const router = useRouter();
   const handleLogout = () => {
     localStorage.removeItem("user");
@@ -10,9 +9,9 @@ function LogoutButton() {
   };
   return (
     <button onClick={handleLogout} className="btn btn-ghost text-base-content">
-      Logout
+      Log Out
     </button>
   );
-}
+};
 
 export default LogoutButton;

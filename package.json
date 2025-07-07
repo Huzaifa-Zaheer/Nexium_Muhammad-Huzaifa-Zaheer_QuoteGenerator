@@ -10,6 +10,8 @@
     "server": "json-server --watch src/app/_data/db.json --port 3001"
   },
   "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "daisyui": "^5.0.46",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

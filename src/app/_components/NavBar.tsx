@@ -1,31 +1,31 @@
+"use client";
 import Link from "next/link";
-import React from "react";
-import LogoutButton from "./LogutButton";
+import React, { useEffect, useState } from "react";
+import LogoutButton from "./LogoutButton";
 
 const NavBar = () => {
-  const session = false;
+  const [session, setSession] = useState(false);
+  useEffect(() => {
+    setSession(!!localStorage.getItem("user"));
+  }, []);
+
   return (
-    <nav className="bg-white shadow-sm">
-      <div className="container mx-auto p-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-blue-800">
+    <nav className="navbar bg-base-100 shadow-sm">
+      <div className="container mx-auto flex justify-between items-center w-full">
+        <Link href="/" className="text-2xl font-bold text-primary">
           Quote Generator
         </Link>
-        <div className="flex items-center space-x-3 p-5"> 
+        <div className="flex items-center space-x-3">
           {session ? (
-            <>
-              <Link href="/qoutes" className="text-gray-700 hover:text-blue-600">
-                Quotes
-              </Link>
-              <LogoutButton />
-            </>
+            <LogoutButton />
           ) : (
             <>
-              <Link href="/login" className="text-gray-900 hover:text-blue-600">
+              <Link href="/login" className="btn btn-ghost text-base-content">
                 Login
               </Link>
               <Link
                 href="/register"
-                className="text-gray-900 hover:text-blue-600"
+                className="btn btn-ghost text-base-content"
               >
                 Register
               </Link>
